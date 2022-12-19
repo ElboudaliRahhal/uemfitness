@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "733700376410",
+    "project_id": "uemfitness",
+    "storage_bucket": "uemfitness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733700376410:android:a8fb37e717650230af9563",
+        "android_client_info": {
+          "package_name": "com.example.fitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733700376410-hv2re6p71g8glp5cu0jttetutbrn1o03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsiUNdNNJIMAUZBmWzBV7kUwP3tVIcUWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733700376410-hv2re6p71g8glp5cu0jttetutbrn1o03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

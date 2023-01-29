@@ -1,9 +1,8 @@
-import 'package:fitness/AccountPage.dart';
-import 'package:fitness/AddRDV.dart';
 
-import 'package:fitness/HomePage.dart';
-import 'package:fitness/Test.dart';
+import 'package:fitness/AddRDV.dart';
+import 'package:fitness/WorkOut.dart';
 import 'package:flutter/material.dart';
+import 'Account.dart';
 
 
 
@@ -20,7 +19,6 @@ class _BottomState extends State<Bottom> {
 
 
 
-
   int selectedItem = 0;
 
   void onIteamTap(int index){
@@ -33,10 +31,9 @@ class _BottomState extends State<Bottom> {
   @override
   void initState() {
 
-    _pages.add(Test());
+    _pages.add(WorkOut());
     _pages.add(AddRDV());
-    _pages.add(HomePage());
-   // _pages.add(AccountPage());
+    _pages.add(Account());
     super.initState();
   }
 
@@ -68,7 +65,7 @@ class _BottomState extends State<Bottom> {
                 onTap: onIteamTap,
                 items: [
                   BottomNavigationBarItem(
-                      icon: Icon(Icons.category), label: 'Category'),
+                      icon: Icon(Icons.fitness_center), label: 'Exercices'),
                   BottomNavigationBarItem(icon: Icon(Icons.add), label: ''),
                   BottomNavigationBarItem(
                       icon: Icon(Icons.account_circle), label: 'Account')
@@ -81,11 +78,13 @@ class _BottomState extends State<Bottom> {
       floatingActionButton: Padding(
         padding: const EdgeInsets.all(8.0),
         child: FloatingActionButton(
-          backgroundColor: selectedItem == 1 ? Colors.blue : Colors.blueGrey,
+          backgroundColor: selectedItem == 1 ? Colors.blue : Colors.blue[300],
           child: Icon(Icons.add),
           onPressed: () => setState(() {
+
             selectedItem = 1;
           }),
+
         ),
       ),
     );

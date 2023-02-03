@@ -89,7 +89,7 @@ void _upload(BuildContext context,String day)  {
                 RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18.0),
                     side: BorderSide(color: Colors.purple)))),
-        onPressed: (mymap.containsKey(day)  || isPassed4) ? null : () {
+        onPressed: (mymap.containsKey(day) || isPassed  || isPassed4) ? null : () {
 
           showModalBottomSheet(
             shape: const RoundedRectangleBorder(

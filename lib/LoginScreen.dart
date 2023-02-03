@@ -6,12 +6,6 @@ import 'package:flutter/material.dart';
 import 'Bottom.dart';
 import 'Regestration.dart';
 
-
-
-
-
-
-
 FirebaseAuth auth = FirebaseAuth.instance;
 
 
@@ -39,6 +33,7 @@ class _LoginScreenState extends State<LoginScreen> {
             children: <Widget>[
 
               Container(
+
 
                 width: 100.0,
                 height: 150.0,
@@ -106,9 +101,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     onPressed: () async{
 
                                       UserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(email: nameController.text, password: passwordController.text);
-                                      String userId = userCredential.user!.uid;
+
                                       Navigator.push(context, MaterialPageRoute(builder: (context)=>Bottom()));
-                                      print('User signed in with ID: $userId');
+
 
                     },
                   )
@@ -135,9 +130,5 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 }
 
-String validatePassword(String value) {
-  if (!(value.length > 5)) {
-    return "Password should contain more than 5 characters";
-  }
-  return '';
-}
+
+

@@ -132,16 +132,7 @@ class _AccountState extends State<Account> {
                    Text(_email),
 
 
-                  SizedBox(height: 40,),
-                      SizedBox(
-                        height: 400,
-                        child: CircleAvatar(
-                          radius: 64,
-                          backgroundImage: NetworkImage("https://firebasestorage.googleapis.com/v0/b/uemfitness.appspot.com/o/logo%2Fdownload.jpeg?alt=media&token=1d490646-f35b-4393-b51f-70880c0699ce"),
-                        ),
-                      )
-
-
+                 
 
                     ],
                   )
